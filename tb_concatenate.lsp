@@ -21,7 +21,7 @@
         ;; Get copy of the active project's title descriptions
         (setq x (c:wd_proj_wdp_data)) ;; API call for project data
         (setq desclst (nth 2 x)) ;; strip out just LINEx list
-
+        (setq d2 (nth 6 x))
 
         ;; Now assemble the concatenated output string
         (foreach item linelst
